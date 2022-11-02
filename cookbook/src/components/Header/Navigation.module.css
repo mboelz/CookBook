@@ -1,0 +1,9 @@
+.Navigation{
+    display: flex;
+    justify-content: center;
+    border: solid red 1px;
+    /* height: 860px; */
+    background-color: #EAF2D7;
+    padding: 10px
+        
+}
