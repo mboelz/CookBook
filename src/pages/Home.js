@@ -3,7 +3,11 @@ import RecipeHighlights from '../components/RecipeHighlights'
 
 const Home = () => {
   return (
-    <RecipeHighlights/>
+    <>
+     <RecipeHighlights/>
+     <p className='text-xl text-white bg-slate-800 font-semibold'>Test</p>
+     </>
+   
   )
 }
 
