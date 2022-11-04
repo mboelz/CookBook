@@ -4,34 +4,14 @@ import Introduce from './Introduce.js'
 
 
 
-const Main = () => {
+const Main = (props) => {
 
 
 
 return(
     <>
     <div className={styles.main}>
-    <Introduce/>
-    <div>
-        <br/>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        {/* <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2>
-        <h2>Ich bin die Main</h2> */}
-    </div>
+    {props.children}
     </div>
     </>
 )
