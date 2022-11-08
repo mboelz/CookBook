@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { useContentful } from 'react-contentful';
+import { Link } from 'react-router-dom';
 
 const AllRecipes = () => {
-
   const { data, error, fetched, loading } = useContentful({
     contentType: 'blog',
     // query: {
@@ -24,11 +24,26 @@ const AllRecipes = () => {
   }
 
   // See the Contentful query response
-  console.log(data);
+  const recipes = data.items;
+
+  console.log(recipes);
+
+  const itemsJSX = recipes.map(recipe => {
+    return (
+      <div key={recipe.sys.id}>
+        <Link to={`/recipes/${recipe.fields.recipeSlug}`}>
+          {recipe.fields.recipeTitle}
+        </Link>
+      </div>
+    );
+  });
 
   return (
-    <div>AllRecipes</div>
-  )
-}
+    <div>
+      <h1>Übersicht:</h1>
+      {itemsJSX}
+    </div>
+  );
+};
 
-export default AllRecipes
+export default AllRecipes;
