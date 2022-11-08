@@ -60,7 +60,7 @@ const RecipeDetail = () => {
               <h2 className="text-xl font-bold mb-4">Zutaten:</h2>
               <ul>{recipeIngredients}</ul>
             </div>
-            <div className="border-solid border-t-2 border-[#EAF2D7] p-4 mt-4 w-[50%]">
+            <div className="border-solid border-t-2 border-[#EA9AB2] p-4 mt-4 w-[50%]">
               {' '}
             </div>
             <div>

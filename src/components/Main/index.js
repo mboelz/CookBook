@@ -7,13 +7,14 @@ import Introduce from './Introduce.js'
 const Main = (props) => {
 
 
+    
 
 return(
-    <>
+    
     <div className={styles.main}>
     {props.children}
     </div>
-    </>
+    
 )
 
 
