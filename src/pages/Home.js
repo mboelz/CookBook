@@ -4,8 +4,10 @@ import RecipeHighlights from '../components/RecipeHighlights'
 const Home = () => {
   return (
     <>
-     <RecipeHighlights/>
-     <p className='text-xl text-white bg-slate-800 font-semibold'>Test</p>
+     
+    <p className='bg-[#EFCFE3] rounded-xl p-4 text-xl text-black font-semibold m-4'>
+      <RecipeHighlights/>
+    </p>
      </>
    
   )

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     font-size: 1.15rem;
-    border-top: solid white 1px;
     background-color: #EA9AB2;
     padding: 30px;    
 }
