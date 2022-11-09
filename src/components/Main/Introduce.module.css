@@ -1,14 +1,10 @@
 .introduce {
-    display: flex;
-  
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 15px;
-    background: #B3DEE2;
-    margin: 60px;
-    border-radius: 12px;
-    border: solid 1px black;
-    max-width: 600px;
-    /* box-sizing: border-box; */
-  }
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #b3dee2;
+  /* margin: 60px; */
+  border-radius: 12px;
+  width: 80%;
+  /* box-sizing: border-box; */
+}

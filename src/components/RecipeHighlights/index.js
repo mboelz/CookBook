@@ -1,44 +1,47 @@
-import React from 'react'
+import React from 'react';
 import { useContentful } from 'react-contentful';
+import { Link } from 'react-router-dom';
+import Headline from '../Main/Headline';
+import RecipeItem from '../RecipeItem';
 
 const RecipeHighlights = () => {
+  const { data, error, fetched, loading } = useContentful({
+    contentType: 'blog',
+    query: {
+      'fields.recipeHighlight': true,
+    },
+  });
 
-    
+  if (loading || !fetched) {
+    return null;
+  }
 
-    const { data, error, fetched, loading } = useContentful({
-        contentType: 'blog',
-        query: {
-          'fields.recipeHighlight': true}
-        }
-      );
+  if (error) {
+    console.error(error);
+    return null;
+  }
 
-    
-      if (loading || !fetched) {
-        return null;
-      }
-    
-      if (error) {
-        console.error(error);
-        return null;
-      }
-    
-      if (!data) {
-        return <p>Page does not exist.</p>;
-      }
-    
-      // See the Contentful query response
-      console.log(data.items);
+  if (!data) {
+    return <p>Page does not exist.</p>;
+  }
+
+  // See the Contentful query response
+  // console.log(data.items);
 
   return (
-    <div>
-        <h1 className="flex flex-col items-center text-xl font-bold m-4">Recipe Highlights:</h1>
-     
-        {data.items.map( (entry) => {
-        return <p key={entry.fields.recipeSlug}>{entry.fields.recipeTitle}</p>
-        })}
+    <div className="w-full">
+      <Headline text="Highlights der Woche:" />
+      {data.items.map(entry => {
+        return (
+          <RecipeItem key={entry.sys.id} entry={entry} />
 
+          // <Link key={entry.sys.id} to={`/recipes/${entry.fields.recipeSlug}`}>
+          //   {entry.fields.recipeTitle}
+          // </Link>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default RecipeHighlights
+export default RecipeHighlights;

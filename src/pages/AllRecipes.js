@@ -1,6 +1,8 @@
 import React from 'react';
 import { useContentful } from 'react-contentful';
 import { Link } from 'react-router-dom';
+import Headline from '../components/Main/Headline';
+import RecipeItem from '../components/RecipeItem';
 
 const AllRecipes = () => {
   const { data, error, fetched, loading } = useContentful({
@@ -30,17 +32,18 @@ const AllRecipes = () => {
 
   const itemsJSX = recipes.map(recipe => {
     return (
-      <div key={recipe.sys.id}>
-        <Link to={`/recipes/${recipe.fields.recipeSlug}`}>
-          {recipe.fields.recipeTitle}
-        </Link>
-      </div>
+      <RecipeItem key={recipe.sys.id} entry={recipe} />
+      // <div key={recipe.sys.id}>
+      //   <Link to={`/recipes/${recipe.fields.recipeSlug}`}>
+      //     {recipe.fields.recipeTitle}
+      //   </Link>
+      // </div>
     );
   });
 
   return (
-    <div>
-      <h1>Übersicht:</h1>
+    <div className="m-4">
+      <Headline text="Alle Rezepte:" />
       {itemsJSX}
     </div>
   );

@@ -1,16 +1,16 @@
-.main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: #EAF2D7;
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #eaf2d7;
 
-    background-image: url('../../Assets/img/backgroundrot.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /* background-position: center; */
-    background-repeat: repeat-x;
-    background-repeat: repeat-y;
-    /* transform: rotate(45deg); */
+  background-image: url('../../Assets/img/backgroundrot.jpg');
+  background-size: 300%;
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  /* background-position: center; */
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  /* transform: rotate(45deg); */
 }

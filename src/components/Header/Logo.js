@@ -4,8 +4,9 @@ import styles from '../Header/Logo.module.css';
 
 const Logo = () => {
   return (
-    <div className={styles.logo}>
-      <img src={logo} alt="Logo CookBook" />
+    <div>
+      {/* <div className={styles.logo}> */}
+      <img src={logo} alt="Logo CookBook" className="w-20" />
     </div>
   );
 };

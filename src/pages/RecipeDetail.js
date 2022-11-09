@@ -43,7 +43,7 @@ const RecipeDetail = () => {
 
   return (
     <>
-      <p className="bg-[#EFCFE3] p-4 mt-8 text-xl font-bold text-center w-full md:rounded-xl md:w-auto">
+      <p className="bg-[#B3DEE2] p-4 mt-8 text-xl font-bold text-center w-full md:rounded-xl md:w-auto">
         {recipe.recipeTitle}
       </p>
       <div className="rounded-xl m-4">

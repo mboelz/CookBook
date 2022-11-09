@@ -1,16 +1,17 @@
-import React from 'react'
-import RecipeHighlights from '../components/RecipeHighlights'
+import React from 'react';
+import RecipeHighlights from '../components/RecipeHighlights';
+import Introduce from '../components/Main/Introduce';
+import Headline from '../components/Main/Headline';
 
 const Home = () => {
   return (
     <>
-     
-    <p className='bg-[#EFCFE3] rounded-xl p-4 text-xl text-black font-semibold m-4'>
-      <RecipeHighlights/>
-    </p>
-     </>
-   
-  )
-}
+      <div className=" text-xl text-black font-semibold m-4">
+        <Introduce />
+        <RecipeHighlights />
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default Home;
