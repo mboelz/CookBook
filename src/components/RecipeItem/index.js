@@ -3,13 +3,17 @@ import { Link } from 'react-router-dom';
 
 const RecipeItem = ({ entry }) => {
   console.log(entry);
+
+  const { recipeSlug, recipeImg, recipeTitle } = entry.fields;
+
   return (
-    <Link to={`/recipes/${entry.fields.recipeSlug}`}>
+    <Link to={`/recipes/${recipeSlug}`}>
       <div className="flex flex-col bg-[#EFCFE3] rounded-xl p-4 m-4">
         <div className="flex justify-center">
           <img
-            src={entry.fields.recipeImg.fields.file.url}
-            className="object-cover h-80 w-full rounded-xl border-solid border-2 border-[#EA9AB2] "
+            src={recipeImg.fields.file.url}
+            alt={recipeTitle}
+            className="object-cover h-80 w-full rounded-xl border-solid border-2 border-[#EA9AB2]"
           />
         </div>
 
@@ -24,11 +28,3 @@ const RecipeItem = ({ entry }) => {
 };
 
 export default RecipeItem;
-
-// img {
-//     display: block;
-//     max-width:230px;
-//     max-height:95px;
-//     width: auto;
-//     height: auto;
-//   }
