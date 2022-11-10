@@ -42,11 +42,11 @@ const AllRecipes = () => {
   });
 
   return (
-    <div className="m-4 max-w-screen-xl">
-      <Headline text="Alle Rezepte:" />
-      {/* <div>{itemsJSX}</div> */}
-      <div className="md:flex md:flex-wrap md:flex-1 md:justify-center">
-        {' '}
+    <div className="m-4 max-w-[1500px]">
+      <div className="xl:w-[30%] md:m-auto">
+        <Headline text="Alle Rezepte:" />
+      </div>
+      <div className="md:flex md:flex-wrap md:flex-1 md:justify-center md:mb-10 xl:mt-22 xl:mb-24">
         {itemsJSX}
       </div>
     </div>

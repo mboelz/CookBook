@@ -1,10 +1,9 @@
-
-
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #EA9AB2;
-
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ea9ab2;
+  width: 500px;
+  /* max-w-[1500px] */
 }

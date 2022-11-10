@@ -1,17 +1,17 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Header from './components/Header';
+import Main from './components/Main';
 import Footer from './components/Footer';
 
-import React from 'react'
+import React from 'react';
 
-const Layout = (props) => {
+const Layout = props => {
   return (
     <>
-    <Header/>
-    <Main>{props.children}</Main>
-    <Footer/>
+      <Header />
+      <Main>{props.children}</Main>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

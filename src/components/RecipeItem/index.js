@@ -18,7 +18,7 @@ const RecipeItem = ({ entry }) => {
         </div>
 
         <div>
-          <p className="text-center text-xl font-bold m-4 md:min-h-[55px] md:flex md:items-center md:justify-center">
+          <p className="text-center text-xl font-bold m-4 md:min-h-[90px] md:flex md:items-center md:justify-center">
             {entry.fields.recipeTitle}
           </p>
         </div>
