@@ -42,15 +42,15 @@ const RecipeDetail = () => {
   );
 
   return (
-    <>
-      <p className="bg-[#B3DEE2] p-4 mt-8 text-xl font-bold text-center w-full md:rounded-xl md:w-auto">
+    <div className="md:max-w-[1000px] xl:mt-24 xl:mb-48">
+      <p className="bg-[#B3DEE2] p-4 mt-8 text-xl font-bold text-center w-full md:rounded-xl md:w-auto xl:w-[50%] md:m-auto">
         {recipe.recipeTitle}
       </p>
       <div className="rounded-xl m-4">
         <div className="bg-[#EFCFE3] rounded-xl p-4">
           <div className="flex justify-center">
             <img
-              className="border-solid border-2 border-[#EA9AB2] rounded-xl mt-2 md:mt-4"
+              className="border-solid border-2 border-[#EA9AB2] rounded-xl mt-2 md:mt-4 md:min-w-lg md:max-w-xl"
               src={recipe.recipeImg.fields.file.url}
             />
           </div>
@@ -70,7 +70,7 @@ const RecipeDetail = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
