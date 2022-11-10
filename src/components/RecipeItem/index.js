@@ -8,7 +8,7 @@ const RecipeItem = ({ entry }) => {
 
   return (
     <Link to={`/recipes/${recipeSlug}`}>
-      <div className="flex flex-col bg-[#EFCFE3] rounded-xl p-4 m-4">
+      <div className="flex flex-col bg-[#EFCFE3] rounded-xl p-4 m-4 md:w-[300px]">
         <div className="flex justify-center">
           <img
             src={recipeImg.fields.file.url}
@@ -18,7 +18,7 @@ const RecipeItem = ({ entry }) => {
         </div>
 
         <div>
-          <p className="text-center text-xl font-bold m-4">
+          <p className="text-center text-xl font-bold m-4 md:min-h-[55px] md:flex md:items-center md:justify-center">
             {entry.fields.recipeTitle}
           </p>
         </div>

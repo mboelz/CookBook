@@ -42,9 +42,13 @@ const AllRecipes = () => {
   });
 
   return (
-    <div className="m-4">
+    <div className="m-4 max-w-screen-xl">
       <Headline text="Alle Rezepte:" />
-      {itemsJSX}
+      {/* <div>{itemsJSX}</div> */}
+      <div className="md:flex md:flex-wrap md:flex-1 md:justify-center">
+        {' '}
+        {itemsJSX}
+      </div>
     </div>
   );
 };
