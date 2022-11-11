@@ -6,11 +6,15 @@ import React from 'react';
 
 const Layout = props => {
   return (
-    <>
+    <div className="flex flex-col h-[100%]">
       <Header />
-      <Main>{props.children}</Main>
-      <Footer />
-    </>
+      <div className="flex-grow flex justify-center">
+        <Main>{props.children}</Main>
+      </div>
+      <div className="flex-grow">
+        <Footer />
+      </div>
+    </div>
   );
 };
 
