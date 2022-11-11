@@ -42,7 +42,7 @@ const RecipeDetail = () => {
   );
 
   return (
-    <div className="md:max-w-[1000px] xl:mt-24 xl:mb-48">
+    <div className="md:max-w-[1000px] ">
       <p className="bg-[#B3DEE2] p-4 mt-8 text-xl font-bold text-center w-full md:rounded-xl md:w-auto xl:w-[50%] md:m-auto">
         {recipe.recipeTitle}
       </p>
