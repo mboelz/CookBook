@@ -1,6 +1,6 @@
 import React from 'react';
 import { useContentful } from 'react-contentful';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Headline from '../components/Main/Headline';
 import RecipeItem from '../components/RecipeItem';
 

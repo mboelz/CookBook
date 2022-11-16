@@ -1,6 +1,6 @@
 import React from 'react';
 import { useContentful } from 'react-contentful';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Headline from '../Main/Headline';
 import RecipeItem from '../RecipeItem';
 
@@ -31,7 +31,7 @@ const RecipeHighlights = () => {
   return (
     <div className="w-full">
       <Headline text="Highlights der Woche:" />
-      {data.items.map(entry => {
+      <div className='flex flex-wrap justify-center'>{data.items.map(entry => {
         return (
           <RecipeItem key={entry.sys.id} entry={entry} />
 
@@ -40,7 +40,7 @@ const RecipeHighlights = () => {
           // </Link>
         );
       })}
-    </div>
+    </div></div>
   );
 };
 

@@ -29,7 +29,6 @@ const RecipeDetail = () => {
   }
 
   // See the Contentful query response
-  console.log(data.items);
 
   const recipe = data.items[0].fields;
   const recipePreparation =
@@ -51,7 +50,7 @@ const RecipeDetail = () => {
           <div className="flex justify-center">
             <img
               className="border-solid border-2 border-[#EA9AB2] rounded-xl mt-2 md:mt-4 md:min-w-lg md:max-w-xl"
-              src={recipe.recipeImg.fields.file.url}
+              src={recipe.recipeImg.fields.file.url} alt={recipe.recipeTitle}
             />
           </div>
 

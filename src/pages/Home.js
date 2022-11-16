@@ -1,7 +1,6 @@
 import React from 'react';
 import RecipeHighlights from '../components/RecipeHighlights';
 import Introduce from '../components/Main/Introduce';
-import Headline from '../components/Main/Headline';
 
 const Home = () => {
   return (

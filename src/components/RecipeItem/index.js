@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const RecipeItem = ({ entry }) => {
-  console.log(entry);
+  // console.log(entry);
 
   const { recipeSlug, recipeImg, recipeTitle } = entry.fields;
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from '../../Assets/img/logo.png';
-import styles from '../Header/Logo.module.css';
+// import styles from '../Header/Logo.module.css';
 
 const Logo = () => {
   return (
     <div>
-      {/* <div className={styles.logo}> */}
+    
       <img src={logo} alt="Logo CookBook" className="w-20" />
     </div>
   );
